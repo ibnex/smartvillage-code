@@ -1,0 +1,16 @@
+{
+  "name": "smart-village-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart Village Informatics & Development Dashboard - full-stack MERN application",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n API,WEB -c green,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "start": "npm --prefix server start",
+    "build": "npm --prefix client run build",
+    "seed": "npm --prefix server run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
